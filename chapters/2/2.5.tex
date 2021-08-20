@@ -1,0 +1,83 @@
+\renewcommand{\theequation}{\theenumi}
+\begin{enumerate}[label=\arabic*.,ref=\thesubsection.\theenumi]
+\item What lines are represented by the following equations:
+\begin{multicols}{2}
+\begin{enumerate}
+%{\footnotesize
+\item 
+$
+\vec{x}^T
+\myvec{0 & 1\\1 & 0}
+\vec{x} = 0
+$
+\item 
+$
+\vec{x}^T
+\myvec{1 & 0\\0 & -1}
+\vec{x} = 0
+$
+\item 
+$
+\vec{x}^T
+\myvec{6 & \frac{1}{2}\\\frac{1}{2} & -1}
+\vec{x} = 0
+$
+\item 
+$
+\vec{x}^T
+\myvec{-1 & -\tan\theta\\\-\tan\theta & 1}
+\vec{x} = 0
+$
+\item 
+$
+x^3+3x^2y-3xy^2-y^3 = 0
+$
+%}
+\end{enumerate}
+\end{multicols}
+\item Find the angles between the pairs of straight lines represented by the following equations:
+\begin{multicols}{2}
+\begin{enumerate}
+\item
+$
+\vec{x}^T
+\myvec{1 & -2\\\-2 & 1}
+\vec{x} = 0
+$
+\item
+$
+\vec{x}^T
+\myvec{1 & 0\\0 & -1}
+\vec{x} = 0
+$
+\item
+$
+\vec{x}^T
+\myvec{1 & -\frac{5}{2}\\-\frac{5}{2} & 4}
+\vec{x} = 0
+$
+\item
+$
+\vec{x}^T
+\myvec{1 & 2\\2 & 0}
+\vec{x} = 0
+$
+\item
+$
+\vec{x}^T
+\myvec{1 & \frac{1}{2}\\ \frac{1}{2} & -6}
+\vec{x} = 0
+$
+\end{enumerate}
+\end{multicols}
+\numberwithin{equation}{enumi}
+\item Prove that the equations
+\begin{align}
+\vec{x}^T
+\myvec{1 & -2\\-2 & 1}
+\vec{x} = 0
+\\
+\myvec{1 & 1}\vec{x} = 3
+\end{align}
+are the sides of an equilateral triangle.
+\end{enumerate}

@@ -1,0 +1,563 @@
+\renewcommand{\theequation}{\theenumi}
+\begin{enumerate}[label=\arabic*.,ref=\thesubsection.\theenumi]
+\item The points $\vec{O}=\myvec{0\\0},\vec{A}=\myvec{a_1\\a_2}$ are as shown in Fig. \ref{fig:line_homog}. 
+Find the equation of  $OA$. 
+\numberwithin{equation}{enumi}
+\begin{figure}
+\centering
+\includegraphics[width=\columnwidth]{./figs/line_homog.eps}
+\caption{}
+\label{fig:line_homog}
+\end{figure}
+\\
+\solution
+Let $\vec{x}=\myvec{x_1\\x_2}$ be any point on $OA$.
+Then, using similar triangles,
+\begin{align}
+\frac{x_2}{x_1} &= \frac{a_2}{a_1} = m
+\\
+\implies x_2 &=  m x_1
+\end{align}
+where $m$ is known as the slope of the line. Thus, the equation of the line is
+\begin{align}
+%\label{eq:homog}
+\vec{x} = \myvec{x_1\\m x_1} = x_1 \myvec{1 \\ m} = x_1\vec{m}
+\end{align}
+In general, the above equation is written as
+\begin{align}
+\label{eq:homog}
+\vec{x} = \lambda \vec{m},
+\end{align}
+%
+where $\vec{m}$ is the direction vector of the line.
+
+\item Find the equation of $AB$ in Fig. \ref{fig:line_nhomog}
+\begin{figure}
+\centering
+\includegraphics[width=\columnwidth]{./figs/line_nhomog.eps}
+\caption{}
+\label{fig:line_nhomog}
+\end{figure}
+\\
+\solution 
+From Fig. \ref{fig:line_nhomog}, 
+%
+\begin{align}
+\frac{x_2-a_2}{x_1-a_1} = \frac{b_2-a_2}{b_1-a_1} = m
+\\
+\implies x_2 = m x_1 + a_2-ma_1
+\label{eq:line_shift}
+\end{align}
+%
+From \eqref{eq:line_shift},
+\begin{align}
+\myvec{x_1 \\ x_2} &= 
+\myvec{x_1 \\   m x_1 + a_2-ma_1
+} 
+\\
+&=\vec{A} + \brak{x_1-a_1}  \myvec{1 \\ m}
+\\
+&=\vec{A} + \lambda  \vec{m}
+\label{eq:nhomog}
+\end{align}
+\item {\em Translation:} If the line shifts from the origin by $\vec{A}$, \eqref{eq:nhomog} is obtained from \eqref{eq:homog} by adding $\vec{A}$.
+\item Find the length of $\vec{A}$ in Fig. \ref{fig:line_homog}
+\\
+\solution Using Baudhayana's theorem, the length of the vector $\vec{A}$ is defined as
+\begin{equation}
+ \norm{\vec{A}} = OA = \sqrt{a_1^2 + a_2^2}
+=\sqrt{\vec{A}^T\vec{A}}.
+\end{equation}
+%
+Also, from \eqref{eq:homog}, 
+\begin{equation}
+\norm{\vec{A}} = \lambda \sqrt{1+m^2}
+\end{equation}
+%
+Note that $\lambda$ is the variable that determines the length of $\vec{A}$, 
+since $m$ is constant for all points on the line.
+%
+\item Find $\vec{A}-\vec{B}$.
+\begin{figure}
+\centering
+\includegraphics[width=\columnwidth]{./figs/ab.eps}
+\caption{}
+\label{fig:ab}
+\end{figure}
+%
+\\
+\solution See Fig. \ref{fig:ab}. From \eqref{eq:nhomog}, for some 
+$\lambda$,
+\begin{align}
+\vec{B} &=\vec{A} + \lambda \myvec{1 \\ m}
+\\
+\implies \vec{A} - \vec{B} &= - \lambda \myvec{1 \\ m},
+\end{align}
+%
+$\vec{A} - \vec{B}$ is marked in Fig. \ref{fig:ab}.
+%
+\item Show that $AB = \norm{\vec{A}-\vec{B}}$
+\item Show that the equation of $AB$ is
+\begin{align}
+\label{eq:line_ab}
+\vec{x} = \vec{A}+ \lambda\brak{\vec{B}-\vec{A}}
+\end{align}
+%
+\item The {\em normal} to the vector $\vec{m}$ is defined as
+\begin{align}
+\label{eq:normal}
+\vec{n}^T\vec{m} = 0
+\end{align}
+\begin{align}
+\label{eq:normal_omat}
+\vec{n} = \myvec{0 & 1\\ -1 & 0}\vec{m}
+\end{align}
+\item From \eqref{eq:line_ab}, the equation of a line can also be expressed as
+\begin{align}
+\label{eq:line_ab_normal}
+\vec{n}^T\vec{x} &= \vec{n}^T\vec{A}+ \lambda\vec{n}^T\brak{\vec{B}-\vec{A}}
+\\
+\implies \vec{n}^T\vec{x} &=c
+\label{eq:line_normal}
+\end{align}
+\item The unit vectors on the $x$ and $y$ axis are defined as
+\begin{align}
+\label{eq:line_unit}
+\vec{e}_1 &=\myvec{1\\0}, 
+\\
+\vec{e}_2 &=\myvec{0\\1}
+\end{align}
+\item If $a$ be the {\em intercept} of the line 
+\begin{align}
+\label{eq:line_intercept}
+\vec{n}^T\vec{x} &=c
+\end{align}
+on the $x-$axis, then $\myvec{a\\0}$  is a point on the line.  Thus, 
+\begin{align}
+%\label{eq:line_intercept}
+\vec{n}^T\myvec{a\\0} &=c
+\\
+\implies a &= \frac{c}{\vec{n}^T\vec{e}_1}
+\end{align}
+%
+\renewcommand{\theequation}{\theenumi}
+%
+\item The {\em rotation matrix} is defined as
+\begin{align}
+\vec{Q} = \myvec{\cos \theta & -\sin \theta\\ \sin \theta & \cos \theta}
+\end{align}
+%
+where $\theta$ is anti-clockwise.
+\item 
+\begin{align}
+\vec{Q}^T\vec{Q} = \myvec{1 & 0 \\ 0 & 1} = \vec{I}
+\end{align}
+%
+where $\vec{I}$ is the {\em identity matrix}. The rotation matrix $\vec{Q}$ is also an {\em orthogonal matrix}.
+
+\numberwithin{equation}{enumi}
+%
+\item Find the equation of  line $L$ in Fig. \ref{fig:line_dist}.
+\\
+\solution The equation of the $x-$axis is
+\begin{align}
+\vec{x} =\lambda \vec{e}_1
+\end{align}
+Translation by $p$ units along the $y-$axis results in 
+\begin{align}
+L_0: \quad \vec{x} = \lambda \vec{e}_1 + p \vec{e}_2 
+\end{align}
+Rotation by $90\degree-\alpha$ in the anti-clockwise direction yields
+\begin{align}
+L: \quad \vec{x} &= \vec{Q}\cbrak{\lambda \vec{e}_1 + p \vec{e}_2 }
+\\
+&=\lambda \vec{Q}\vec{e}_1 + p \vec{Q}\vec{e}_2 
+\label{eq:line_dist_temp}
+\end{align}
+%
+where 
+\begin{align}
+\vec{Q} &= \myvec{\cos \brak{\alpha-90} & -\sin \brak{\alpha-90}\\ \sin \brak{\alpha-90} & \cos \brak{\alpha-90}}
+\\
+&= \myvec{\sin \alpha & \cos \alpha \\ -\cos \alpha & \sin \alpha}
+\end{align}
+%
+From \eqref{eq:line_dist_temp},
+\begin{align}
+L: \quad \vec{e}_2^T\vec{Q}^T\vec{x}&=\lambda \vec{e}_2^T\vec{Q}^T\vec{Q}\vec{e}_1 + p \vec{e}_2^T\vec{Q}^T\vec{Q}\vec{e}_2 
+\nonumber \\
+&=\lambda \vec{e}_2^T\vec{e}_1 + p \vec{e}_2^T\vec{e}_2 
+\end{align}
+resulting in 
+\begin{align}
+L: \quad \myvec{\cos \alpha & \sin \alpha}\vec{x}=p
+\label{eq:line_dist_temp_final}
+\end{align}
+\begin{figure}
+\centering
+\includegraphics[width=\columnwidth]{./figs/line_dist.eps}
+\caption{}
+\label{fig:line_dist}
+\end{figure}
+\item Show that the distance from the orgin to the line 
+\begin{align}
+\vec{n}^T\vec{x} &=c
+\end{align}
+is 
+\begin{align}
+p = \frac{c}{\norm{n}}
+\label{eq:line_dist_orig}
+\end{align}
+\item Show that the point of intersection of two lines 
+\begin{align}
+\vec{n}_1^T\vec{x} &=c_1
+\\
+\vec{n}_2^T\vec{x} &=c_2
+\end{align}
+is given by 
+\begin{align}
+\vec{x} &=\brak{\vec{N}^T}^{-1}\vec{c}
+\end{align}
+where 
+\begin{align}
+\vec{N} = \myvec{\vec{n}_1 & \vec{n}_2}
+\end{align}
+\item The {\em angle between two lines} is given by 
+\begin{align}
+\cos ^{-1} \frac{\vec{n}_1 ^T \vec{n}_2}{\norm{\vec{n}_1}  \norm{\vec{n}_2}}
+\end{align}
+\item Show that the distance of a point $\vec{x}_0$ from the line 
+\begin{align}
+L: \quad \vec{n}^T\vec{x} &=c
+\end{align}
+is 
+\begin{align}
+\frac{\abs{\vec{n}^T\vec{x}_0-c}}{\norm{\vec{n}}} 
+\end{align}
+\solution Let the equation of the line be 
+\begin{align}
+\vec{x} = \vec{A} + \lambda \vec{m}
+\end{align}
+%
+where 
+\begin{align}
+\label{eq:line_dist_orig_pt}
+\vec{n}^T\vec{A} = 0, \vec{n}^T\vec{m} = 0
+\end{align}
+If $\vec{x}_0$ is translated to the origin, the equation of the line $L$ becomes 
+\begin{align}
+\vec{x} &= \vec{A}- \vec{x}_0+ \lambda \vec{m}
+\\
+\implies 
+\vec{n}^T\vec{x} &=c-\vec{n}^T\vec{x}_0
+\end{align}
+From \eqref{eq:line_dist_orig}, \eqref{eq:line_dist_orig_pt} is obtained.
+\item Show that 
+\begin{align}
+ax^2+2bxy+cy^2+2dx+2ey+f=0
+\end{align}
+can be expressed as
+\begin{align}
+\label{eq:quad_form}
+\vec{x}^T\vec{V}\vec{x}+2\vec{u}^T\vec{x}+f=0
+\end{align}
+%
+where
+\begin{align}
+\vec{V} &= \vec{V}^T
+\\
+\vec{u} &= \myvec{d & e}
+\end{align}
+
+\item {\em Pair of straight lines:} \eqref{eq:quad_form}
+%The equation
+%\begin{align}
+%\vec{x}^T\myvec{a & b\\ b & c}\vec{x}+2\myvec{d & e}+f=0
+%\end{align}
+%
+represents a pair of straight lines if 
+\begin{align}
+\begin{vmatrix}
+\vec{V}&\vec{u}
+\\
+\vec{u}^T&f
+\end{vmatrix}
+= 0
+\end{align}
+%
+Two intersecting lines are obtained if 
+\begin{align}
+\abs{\vec{V}} < 0
+\end{align}
+\item  In Fig. \ref{fig:ratio}, let
+\begin{equation}
+\frac{AB}{BC} = \frac{\norm{\vec{A}-\vec{B}}}{\norm{\vec{B}-\vec{C}}} = k.
+\label{eq:k}
+\end{equation}
+%
+Show that
+\begin{equation}
+\frac{\vec{A}+k\vec{C}}{k+1} = \vec{B}.
+\label{eq:ratio}
+\end{equation}
+%
+\solution
+%
+\begin{figure}[!hb]
+\centering
+\includegraphics[width=\columnwidth]{./figs/ratio.eps}
+\caption{}
+\label{fig:ratio}
+\end{figure}
+From \eqref{eq:nhomog}, 
+\begin{align}
+\begin{split}
+\vec{B} &= \vec{A} + \lambda_1 \vec{m}
+\\
+\vec{B} &= \vec{C} - \lambda_2 \vec{m}
+\end{split}
+\\
+\label{eq:rat_1}
+\implies \frac{\norm{\vec{A}-\vec{B}}}{\norm{\vec{B}-\vec{C}}} &= 
+\frac{\lambda_1}{\lambda_2} = k
+\\
+\text{and } \frac{\vec{B}- \vec{A}}{\lambda_1} &= \frac{\vec{C}- 
+\vec{B}}{\lambda_2} = \vec{m},
+\label{eq:rat_2}
+\end{align}
+%
+from \eqref{eq:k}. Using \eqref{eq:rat_1} and \eqref{eq:rat_2},
+\begin{align}
+\vec{A}- \vec{B} &=  k\brak{\vec{B}- \vec{C}}
+\end{align}
+%
+resulting in \eqref{eq:ratio}
+
+%
+\item If $\vec{A}$ and $\vec{B}$ are linearly independent,  
+\begin{equation}
+k_1\vec{A} + k_2\vec{B} = 0 \implies k_1=k_2=0
+\end{equation}
+\item Show that $\vec{D}$ lies inside $\triangle ABC$ iff
+\begin{align}
+\vec{D} = \lambda_1\vec{A} + \lambda_2\vec{B} + \lambda_3\vec{C}
+\end{align}
+such that
+\begin{align}
+0 \le \lambda_1, \lambda_2, \lambda_3 &\le 1,
+\\
+0 \le \lambda_1+\lambda_2+\lambda_3 &\le 1,
+\end{align}
+\item Show that the equation of the angle bisectors of the lines
+\begin{align}
+\vec{n}_1^T\vec{x} &=c_1
+\\
+\vec{n}_2^T\vec{x} &=c_2
+\end{align}
+%
+is
+\begin{align}
+\frac{\vec{n}_1^T\vec{x}-c_1}{\norm{\vec{n}_1}}=\pm\frac{\vec{n}_2^T\vec{x} -c_2}{\norm{\vec{n}_2}}\end{align}
+%\item Show that if 
+%\begin{align}
+%\vec{m}_1 + k\vec{m}_2 \ne 0,
+%\end{align}
+%%
+%there exists $k$ such that for any point $\vec{m}$,
+%\begin{align}
+%\label{eq:line_basis}
+%\vec{m} = \vec{m}_1 + k\vec{m}_2 
+%\end{align}
+\item Find the equation of a line passing through the intersection of the lines
+\begin{align}
+\label{eq:line1}
+\vec{n}_1^T\vec{x} &=c_1
+\\
+\vec{n}_2^T\vec{x} &=c_2
+\label{eq:line2}
+\end{align}
+and passing through the point $\vec{p}$.
+\\
+\solution 
+%Let the equation of any line through the intersection of \eqref{eq:line1} and \eqref{eq:line2} be 
+%\begin{align}
+%\vec{n}^T\vec{x} &=c
+%\label{eq:line12}
+%\end{align}
+%
+%If $\vec{u}$ be the point of intersection, 
+%\begin{align}
+%\myvec{\vec{n}_1^T\\ \vec{n}_2^T\\ \vec{n}^T}\vec{u} &= \myvec{c_1\\c_2\\c}
+%\\
+%\implies \myvec{\vec{n}_1^T & c_1\\ \vec{n}_2^T & c_2\\ \vec{n}^T & c}&
+%\label{eq:line12_mat}
+%\end{align}
+%has rank 2.  Thus, 
+%%
+%\begin{align}
+%\label{eq:line_basis_normal}
+%\myvec{\vec{n}\\c} &= k_1\myvec{\vec{n}_1 \\ c_1}+ k_2\myvec{\vec{n}_2\\c_2} 
+%\end{align}
+%Substituting in \eqref{eq:line12},
+%\begin{align}
+%\vec{n}^T\vec{x} = c &
+%\implies \vec{n}_1^T\vec{x} + k\vec{n}_2^T\vec{x} =  c_1+kc_2=c
+%\label{eq:line_basis_normal_temp}
+%\end{align}
+%%
+%Thus, 
+%\begin{align}
+%k = \frac{\vec{n}_1^T\vec{p}-c_1}{\vec{n}_2^T\vec{p}-c_2}
+%\end{align}
+%%
+%which can be used to obtain the desired equation using \eqref{eq:line_basis_normal_temp}
+%
+%Alternatively, 
+%
+%
+The intersection of the lines is 
+\begin{align}
+\vec{x} = \vec{N}^{-T}\vec{c}
+\end{align}
+%
+where 
+\begin{align}
+\vec{N} &= \myvec{\vec{n}_1 &\vec{n}_2}
+\\
+\vec{c} &= \myvec{c_1 \\ c_2} 
+\end{align}
+Thus, the equation of the desired line is 
+\begin{align}
+\vec{x} = \vec{p}+ \lambda\brak{\vec{N}^{-T}\vec{c}-\vec{p}}&
+\\
+\implies \vec{N}^{T}\vec{x} = \vec{N}^{T}\vec{p}+ \lambda\brak{\vec{c}-\vec{N}^{T}\vec{p}}&
+\end{align}
+resulting in 
+\begin{multline}
+ \brak{\vec{c}-\vec{N}^T\vec{p}}^T\myvec{0 & -1 \\ 1 & 0}\vec{N}^T\vec{x} 
+\\
+= \brak{\vec{c}-\vec{N}^T\vec{p}}^T\myvec{0 & -1 \\ 1 & 0}\vec{N}^T\vec{p}
+\end{multline}
+\item Find $\vec{R}$, the {\em reflection}  of $\vec{P}$ about the line
+\begin{align}
+L: \quad \vec{n}^T\vec{x} = c
+\end{align}
+%
+\begin{figure}
+\centering
+\includegraphics[width=\columnwidth]{./figs/reflection.eps}
+\caption{}
+\label{fig:locus}
+\end{figure}
+\solution Since $\vec{R}$ is the reflection of $\vec{P}$ and $\vec{Q}$ lies on $L$, $\vec{Q}$ bisects $PR$.  
+This leads to the following equations
+Hence, 
+\begin{align}
+\label{eq:reflect_bisect}
+2\vec{Q} &= \vec{P}+\vec{R}
+\\
+\label{eq:reflect_Q}
+\vec{n}^{T}\vec{Q} &= c
+\\
+\label{eq:reflect_R}
+\vec{m}^{T}\vec{R} &= \vec{m}^{T}\vec{P}
+\end{align}
+%
+where $\vec{m}$ is the direction vector of $L$.  From \eqref{eq:reflect_bisect} and \eqref{eq:reflect_Q},
+\begin{align}
+\label{eq:reflect_bisectQ}
+\vec{n}^{T}\vec{R}  &= 2c - \vec{n}^{T}\vec{P}
+\end{align}
+%
+From \eqref{eq:reflect_bisectQ} and \eqref{eq:reflect_R},
+\begin{align}
+\label{eq:reflect_bisectQR}
+\myvec{\vec{m} & \vec{n}}^T\vec{R} &= \myvec{\vec{m} & -\vec{n}}^T\vec{P}+ \myvec{0 \\ 2c}
+\end{align}
+%
+Letting 
+\begin{align}
+\label{eq:reflect_mat}
+\vec{V}=  \myvec{\vec{m} & \vec{n}}
+\end{align}
+with the condition that $\vec{m},\vec{n}$ are orthonormal, i.e.
+\begin{align}
+\label{eq:reflect_ortho}
+\vec{V}^T\vec{V}=  \vec{I}
+\end{align}
+%
+Noting that 
+\begin{align}
+\label{eq:reflect_trans}
+\myvec{\vec{m} & -\vec{n}} &= \myvec{\vec{m} & \vec{n}} \myvec{1 & 0 \\ 0 & -1},
+\end{align}
+\eqref{eq:reflect_bisectQR} can be expressed as
+%
+\begin{align}
+\label{eq:reflect_}
+\vec{V}^T\vec{R} &=  \sbrak{\vec{V}\myvec{1 & 0 \\ 0 & -1}}^T\vec{P}+\myvec{0 \\ 2c}
+\\
+\implies \vec{R} &= \sbrak{\vec{V}\myvec{1 & 0 \\ 0 & -1}\vec{V}^{-1}}^T\vec{P}+ \vec{V}\myvec{0 \\ 2c}
+\\
+ &=\vec{V}\myvec{1 & 0 \\ 0 & -1}\vec{V}^T \vec{P}+2c \vec{n}
+\end{align}
+\item Show that, for any $\vec{m},\vec{n}$, the reflection is also given by
+\begin{align}
+%\label{eq:reflect_bisect}
+\frac{\vec{R}}{2} = \frac{\vec{m}\vec{m}^T-\vec{n}\vec{n}^T}{\vec{m}^T\vec{m}+\vec{n}^T\vec{n}}\vec{P} + c 
+\frac{\vec{n}}{\norm{\vec{n}}^2}
+\end{align}
+
+\end{enumerate}
+%
+%
+%\item Let $\vec{x}$ be any point on $AB$ in Fi.g \ref{fig:orth}.  Show that
+%\begin{equation}
+%\brak{\vec{x}-\vec{A}}^T\brak{\vec{B}-\vec{C}} = 0
+%\end{equation}
+%%
+%\item If $\vec{x,y}$ are any two points on $AB$, show that 
+%\begin{equation}
+%\label{eq:orth_any}
+%\brak{\vec{x}-\vec{y}}^T\brak{\vec{B}-\vec{C}} = 0
+%\end{equation}
+%%
+%\item In Fig. \ref{fig:alt}, $BE \perp AC, CF \perp AB$.  Show that $AD \perp BC$.
+%\begin{figure}[!hb]
+%\centering
+%\includegraphics[width=\columnwidth]{./figs/alt.eps}
+%\caption{}
+%\label{fig:alt}
+%\end{figure}
+%\\
+%\solution Let $\vec{x}$ be the intersection of $BE$ and $CF$. Then, using 
+%\eqref{eq:orth_any},
+%\begin{align}
+%\label{eq:alt_1}
+%\begin{split}
+%\brak{\vec{x}-\vec{B}}^T
+%\brak{\vec{A}-\vec{C}} &= 0
+%\\
+%\brak{\vec{x}-\vec{C}}^T
+%\brak{\vec{A}-\vec{B}} &=0
+%\end{split}
+%\\
+%\label{eq:alt_3}
+%\implies \vec{x}^T\brak{\vec{A}-\vec{C}}-\vec{B}^T\brak{\vec{A}-\vec{C}} &= 0
+%\\
+%\text{and }\vec{x}^T\brak{\vec{A}-\vec{B}}-\vec{C}^T\brak{\vec{A}-\vec{B}} &= 0
+%\label{eq:alt_4}
+%\end{align}
+%%
+%Subtracting \eqref{eq:alt_4} from \eqref{eq:alt_3},
+%\begin{align}
+%\vec{x}^T\brak{\vec{B}-\vec{C}} + \vec{A}^T\brak{\vec{C}-\vec{B}} &= 0
+%\\
+%\implies \brak{\vec{x}^T - \vec{A}^T}\brak{\vec{B}-\vec{C}}  &= 0
+%\\
+%\implies \brak{\vec{x} - \vec{A}}^T\brak{\vec{B}-\vec{C}}  &= 0
+%\end{align}
+%%
+%which completes the proof.
+%\end{enumerate}
+%

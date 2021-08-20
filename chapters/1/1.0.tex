@@ -1,0 +1,97 @@
+%\begin{enumerate}[label=\arabic*.,ref=\thesection]
+%\begin{enumerate}[label=\arabic*.,ref=\thesection.\theenumi]
+%\begin{enumerate}[label=\thesection.\arabic*,ref=\thesection.\theenumi]
+\renewcommand{\theequation}{\theenumi}
+
+\begin{enumerate}[label=\arabic*.,ref=\thesubsection.\theenumi]
+
+\item The {\em inner product} of  $\vec{P}$ and $\vec{Q}$ is defined as
+%\numberwithin{equation}{enumi}
+\begin{align}
+\vec{P}^T\vec{Q} = p_1q_1+p_2q_2
+\end{align}
+\item The {\em norm} of a vector 
+\begin{align}
+\vec{P} = \myvec{p_1\\p_2}
+\end{align}
+is defined as
+\begin{align}
+\norm{\vec{P}} = \sqrt{p_1^2+p_2^2}
+\end{align}
+\item The {\em length} of $PQ$ is defined as
+\begin{align}
+\norm{\vec{P}-\vec{Q}}
+\end{align}
+
+%\renewcommand{\theequation}{\theenumi}
+
+%
+\item The {\em direction vector} of the line $PQ$ is defined as 
+\begin{align}
+\vec{P}-\vec{Q} = \myvec{p_1-q_1\\p_2-q_2}
+\end{align}
+%
+%\item 
+%\begin{equation}
+%PQ \perp RS
+%\iff \brak{\vec{P}-\vec{Q}}^T\brak{\vec{R}-\vec{S}} = 0
+%\end{equation}
+\item The point dividing   $PQ$  in the ratio $k:1$ is
+\begin{equation}
+\vec{R} = \frac{k\vec{P}+\vec{Q}}{k+1}
+\end{equation}
+%
+\item The {\em area} of $\triangle PQR$ is the {\em determinant}
+\begin{equation}
+\begin{vmatrix}
+1 & 1 & 1
+\\
+\vec{P} & \vec{Q} &\vec{R}
+\end{vmatrix}
+\end{equation}
+\item {\em Orthogonality:} See Fig. \ref{fig:orth}.  In $\triangle ABC, AB \perp BC$. Show that
+\begin{equation}
+\brak{\vec{A}-\vec{B}}^T\brak{\vec{B}-\vec{C}} = 0
+\label{eq:orth}
+\end{equation}
+\begin{figure}
+\centering
+\includegraphics[width=\columnwidth]{./figs/orth.eps}
+\caption{}
+\label{fig:orth}
+\end{figure}
+%
+\solution Using Baudhayana's theorem,
+\begin{align}
+\norm{\vec{A}-\vec{B}}^2 + \norm{\vec{B}-\vec{C}}^2 &= 
+\norm{\vec{C}-\vec{A}}^2
+\\
+\implies 
+\brak{\vec{A}-\vec{B}}^T\brak{\vec{A}-\vec{B}} 
+&+ 
+\brak{\vec{B}-\vec{C}}^T\brak{\vec{B}-\vec{C}} 
+\nonumber \\
+&= 
+\brak{\vec{C}-\vec{A}}^T \brak{\vec{C}-\vec{A}}
+\nonumber \\
+\implies 
+2\vec{A}^T\vec{B} - 2\vec{B}^T\vec{B}&+2\vec{B}^T\vec{C}-2\vec{A}^T\vec{C}
+=0
+\end{align}
+which can be simplified to obtain \eqref{eq:orth}.
+\item Let $\vec{x}$ be any point on $AB$ in Fi.g \ref{fig:orth}.  Show that
+\begin{equation}
+\brak{\vec{x}-\vec{A}}^T\brak{\vec{B}-\vec{C}} = 0
+\end{equation}
+%
+\item If $\vec{x,y}$ are any two points on $AB$, show that 
+\begin{equation}
+\label{eq:orth_any}
+\brak{\vec{x}-\vec{y}}^T\brak{\vec{B}-\vec{C}} = 0
+\end{equation}
+
+%\numberwithin{equation}{enumi}
+
+%\renewcommand{\theequation}{\theenumi}
+\end{enumerate}
+.

@@ -1,0 +1,99 @@
+\renewcommand{\theequation}{\theenumi}
+\begin{enumerate}[label=\arabic*.,ref=\thesubsection.\theenumi]
+\item The equation of a quadratic curve is given by
+%\begin{equation}
+%Ax_1^2+Bx_1x_2+Cx_2^2+Dx_1+Ex_2+F = 0
+%\label{eq:quadratic}
+%\end{equation}
+%
+%Show that  \eqref{eq:quadratic} can be expressed as
+\begin{equation}
+\vec{x}^T\vec{V}\vec{x}+2\vec{u}^T\vec{x}+ f = 0
+\label{eq:quadratic_vec}
+\end{equation}
+%
+%Find the matrix $\vec{V}$ and vector $\vec{u}$.
+\item Show that 
+\begin{align}
+\frac{d\brak{\vec{u}^T\vec{x}}}{d\vec{x}} = \vec{u}
+%+ \frac{d\vec{x}}{dx_1}V^T
+%= 0
+\end{align}
+\item Show that 
+\begin{align}
+\frac{d\brak{\vec{x}^T\vec{V}\vec{x}}}{d\vec{x}} = 2\vec{V}^T\vec{x}
+\end{align}
+\item Show that 
+\begin{align}
+\frac{d\vec{x}}{dx_1} = \vec{m}
+\end{align}
+%
+\numberwithin{equation}{enumi}
+\item Find the {\em normal} vector to the curve in \eqref{eq:quadratic_vec} at 
+point $\vec{p}$.
+\\
+\solution Differentiating \eqref{eq:quadratic_vec} with respect to 
+$x_1$,
+\begin{align}
+\frac{d\brak{\vec{x}^T\vec{V}\vec{x}}}{d\vec{x}}\frac{d\vec{x}}{dx_1}+\frac{d\brak{\vec{u}^T\vec{x}}}{d\vec{x}}\frac{d\vec{x}}{dx_1}
+&= 0
+\\
+\implies 2\vec{x}^T\vec{V}\vec{m}+2\vec{u}^T\vec{m}
+& = 0  \because \brak{\frac{d\vec{x}}{dx_1} = \vec{m}}
+\end{align}
+Substituting  $\vec{x} = \vec{p}$ and simplifying
+\begin{align}
+\brak{ \vec{V}\vec{p}+\vec{u}}^T\vec{m} & = 0 
+\\
+\implies \vec{n} &= \vec{V}\vec{p}+\vec{u}
+\end{align}
+%
+\renewcommand{\theequation}{\theenumi}
+\item The {\em tangent} to the curve at $\vec{p}$ is given by 
+\begin{align}
+\vec{n}^T\brak{\vec{x}-\vec{p}} = 0
+\end{align}
+%\item Show that the tangent to \eqref{eq:quadratic} at a point $\vec{p}$ on 
+%the curve is given by
+%\begin{equation}
+%\myvec{\vec{p}^T & 1}\myvec{V & \vec{u} \\ \vec{u}^T & F} \myvec{\vec{x} \\ 1} = 0
+%\label{eq:tangent_one}
+%\end{equation}
+%
+%Show that \eqref{eq:tangent_one} can be expressed as
+This results in
+\begin{equation}
+\brak{\vec{p}^T\vec{V}+\vec{u}^T}\vec{x} + \vec{p}^T\vec{u} +f = 0
+\label{eq:tangent}
+\end{equation}
+
+\item Let $\vec{P}$ be a rotation matrix and  $\vec{c}$ be a vector. Then 
+\begin{align}
+\vec{x} = \vec{P}\vec{y}+\vec{c}.
+\label{eq:affine}
+\end{align}
+ is known as an {\em affine} transformation.
+\item Classify the various conic sections based on $\eqref{eq:quadratic_vec}$.
+\\
+\solution 
+\begin{table}[!ht]
+\begin{center}
+\input{./figs/conics.tex}
+\end{center}
+\caption{}
+\label{table:conics}
+\end{table}
+
+%\item Show that the tangent to \eqref{eq:quadratic} at a point $\vec{p}$ on 
+%the curve is given by
+%\begin{equation}
+%\myvec{\vec{p}^T & 1}\myvec{V & \vec{u} \\ \vec{u}^T & F} \myvec{\vec{x} \\ 1} = 0
+%\label{eq:tangent_one}
+%\end{equation}
+%%
+%\item Show that \eqref{eq:tangent_one} can be expressed as
+%\begin{equation}
+%\brak{\vec{p}^T\vec{V}+\vec{u}^T}\vec{x} + \vec{p}^T\vec{u} +f = 0
+%\label{eq:tangent}
+%\end{equation}
+\end{enumerate}

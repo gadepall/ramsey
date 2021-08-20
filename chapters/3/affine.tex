@@ -1,0 +1,97 @@
+\renewcommand{\theequation}{\theenumi}
+\begin{enumerate}[label=\arabic*.,ref=\thesubsection.\theenumi]
+\numberwithin{equation}{enumi}
+\item In general, Fig. \ref{fig:parab} was generated using an {\em affine transformation}.
+
+\item Express 
+\begin{align}
+y_2 = y_1^2
+\label{eq:parab}
+\end{align}
+as a matrix equation.
+\\
+\solution  \eqref{eq:parab} can be expressed as
+\begin{align}
+\vec{y}^T\vec{D}\vec{y}+2\vec{g}^T\vec{y} = 0
+\label{eq:parab_mat}
+\end{align}
+%
+where 
+\begin{align}
+\vec{D} = \myvec{1 & 0 \\ 0 & 0} 
+,
+\vec{g} &= -\frac{1}{2}\myvec{0 \\ 1}
+\label{eq:parab_coeffs}
+\end{align}
+%
+\item Given 
+\begin{align}
+\vec{x}^T\vec{V}\vec{x}+2\vec{u}^T\vec{x}+ F = 0,
+\label{eq:parab_gen}
+\end{align}
+where 
+\begin{align}
+\vec{V}=\vec{V}^T, \det(\vec{V}) = 0,
+\label{eq:parab_vcond}
+\end{align}
+%
+and $\vec{P}, \vec{c}$ such that
+\begin{align}
+\vec{x} = \vec{P}\vec{y}+\vec{c}.
+\label{eq:parab_affine}
+\end{align}
+\eqref{eq:parab_affine} is known as an affine transformation.
+Show that
+\begin{align}
+\begin{split}
+\vec{D} &= \vec{P}^T\vec{V}\vec{P}
+\\
+\vec{g} &= \vec{P}^T\brak{\vec{V}\vec{c}+\vec{u}}
+\\
+F+ \vec{c}^T\vec{V}\vec{c} + 2\vec{u}^T\vec{c}&= 0
+\end{split}
+\label{eq:parab_parmas}
+\end{align}
+
+\solution Substituting \eqref{eq:parab_affine} in \eqref{eq:parab_gen},
+\begin{align}
+\brak{\vec{P}\vec{y}+\vec{c}}^T\vec{V}\brak{\vec{P}\vec{y}+\vec{c}}+2\vec{u}^T\brak{\vec{P}\vec{y}+\vec{c}}+ F = 0, 
+\end{align}
+which can be expressed as
+\begin{multline}
+\implies \vec{y}^T\vec{P}^T\vec{V}\vec{P}\vec{y}+2\brak{\vec{V}\vec{c}+\vec{u}}^T\vec{P}\vec{y}
+\\
++ F+ \vec{c}^T\vec{V}\vec{c} + 2\vec{u}^T\vec{c} = 0
+\label{eq:parab_simp}
+\end{multline}
+%
+Comparing \eqref{eq:parab_simp} with \eqref{eq:parab_mat} \eqref{eq:parab_parmas} is obtained.
+%
+\item Show that there exists a $\vec{P}$ such that 
+\begin{align}
+\vec{P}^T\vec{P} = \vec{I}
+\end{align}
+%
+Find $\vec{P}$ using
+\begin{align}
+\vec{D} = \vec{P}^T\vec{V}\vec{P}
+\end{align}
+\item Find $\vec{c}$ from \eqref{eq:parab_parmas}.
+\\
+\solution 
+\begin{align}
+\because \vec{g} &= \vec{P}^T\brak{\vec{V}\vec{c}+\vec{u}},
+\\
+\vec{V}\vec{c}&= \vec{P}\vec{g} - \vec{u}
+\\
+\implies \vec{c}^T\vec{V}\vec{c} &= \vec{c}^T\brak{\vec{P}\vec{g} - \vec{u}} = -F- 2\vec{u}^T\vec{c}
+\end{align}
+%
+resulting in the matrix equation
+\begin{align}
+\myvec{\vec{V}\\ \brak{\vec{P}\vec{g} + \vec{u}}^T}\vec{c}&= \myvec{\vec{P}\vec{g} - \vec{u}\\ -F}
+\end{align}
+%
+for computing $\vec{c}$.
+\end{enumerate}
+.
