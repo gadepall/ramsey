@@ -1,39 +1,38 @@
 \contentsline {section}{\numberline {1}Introduction}{1}{section.1}%
 \contentsline {subsection}{\numberline {1.1}Points}{1}{subsection.1.1}%
-\contentsline {section}{\numberline {2}figure}{3}{section.2}%
-\contentsline {subsection}{\numberline {2.1}Loci}{4}{subsection.2.1}%
-\contentsline {section}{\numberline {3}The Straight Line}{4}{section.3}%
-\contentsline {subsection}{\numberline {3.1}Intercepts}{4}{subsection.3.1}%
-\contentsline {subsection}{\numberline {3.2}Line Equation}{5}{subsection.3.2}%
-\contentsline {subsection}{\numberline {3.3}Point of Intersection}{6}{subsection.3.3}%
-\contentsline {subsection}{\numberline {3.4}Perpendiculars and Bisectors}{7}{subsection.3.4}%
-\contentsline {subsection}{\numberline {3.5}Angle Between Lines}{10}{subsection.3.5}%
-\contentsline {subsection}{\numberline {3.6}Miscellaneous}{10}{subsection.3.6}%
-\contentsline {section}{\numberline {4}Curves}{16}{section.4}%
-\contentsline {subsection}{\numberline {4.1}Tangent}{16}{subsection.4.1}%
-\contentsline {subsection}{\numberline {4.2}More on Tangents}{17}{subsection.4.2}%
-\contentsline {subsection}{\numberline {4.3}Normal}{18}{subsection.4.3}%
-\contentsline {subsection}{\numberline {4.4}Affine Transformation: Exercises}{19}{subsection.4.4}%
-\contentsline {section}{\numberline {5}Circle}{31}{section.5}%
-\contentsline {subsection}{\numberline {5.1}Equation}{31}{subsection.5.1}%
-\contentsline {subsection}{\numberline {5.2}Tangent and Normal}{35}{subsection.5.2}%
-\contentsline {subsection}{\numberline {5.3}Pole and Polar}{47}{subsection.5.3}%
-\contentsline {subsection}{\numberline {5.4}Systems of Circles}{48}{subsection.5.4}%
-\contentsline {subsection}{\numberline {5.5}Miscellaneous}{49}{subsection.5.5}%
-\contentsline {section}{\numberline {6}Parabola}{51}{section.6}%
-\contentsline {subsection}{\numberline {6.1}Tangent and Normal}{51}{subsection.6.1}%
-\contentsline {subsection}{\numberline {6.2}Miscellaneous}{52}{subsection.6.2}%
-\contentsline {section}{\numberline {7}The Ellipse}{55}{section.7}%
-\contentsline {subsection}{\numberline {7.1}Properties}{55}{subsection.7.1}%
-\contentsline {subsection}{\numberline {7.2}Pole and Polar}{55}{subsection.7.2}%
-\contentsline {subsection}{\numberline {7.3}Eccentric Angles}{56}{subsection.7.3}%
-\contentsline {subsection}{\numberline {7.4}Miscellaneous}{57}{subsection.7.4}%
-\contentsline {subsection}{\numberline {7.5}Hyperbola}{59}{subsection.7.5}%
-\contentsline {section}{\numberline {8}Polar Coordinates}{61}{section.8}%
-\contentsline {section}{\numberline {9}Easy Problems}{61}{section.9}%
-\contentsline {subsection}{\numberline {9.1}The Straight Line}{61}{subsection.9.1}%
-\contentsline {subsection}{\numberline {9.2}Curves and Loci}{62}{subsection.9.2}%
-\contentsline {subsection}{\numberline {9.3}The Circle}{63}{subsection.9.3}%
-\contentsline {subsection}{\numberline {9.4}The Parabola}{64}{subsection.9.4}%
-\contentsline {subsection}{\numberline {9.5}The Ellipse}{65}{subsection.9.5}%
-\contentsline {subsection}{\numberline {9.6}The Hyperbola}{67}{subsection.9.6}%
+\contentsline {subsection}{\numberline {1.2}Loci}{4}{subsection.1.2}%
+\contentsline {section}{\numberline {2}The Straight Line}{4}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Intercepts}{4}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Line Equation}{4}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}Point of Intersection}{6}{subsection.2.3}%
+\contentsline {subsection}{\numberline {2.4}Perpendiculars and Bisectors}{7}{subsection.2.4}%
+\contentsline {subsection}{\numberline {2.5}Angle Between Lines}{10}{subsection.2.5}%
+\contentsline {subsection}{\numberline {2.6}Miscellaneous}{10}{subsection.2.6}%
+\contentsline {section}{\numberline {3}Curves}{16}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Tangent}{16}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}More on Tangents}{17}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}Normal}{18}{subsection.3.3}%
+\contentsline {subsection}{\numberline {3.4}Affine Transformation: Exercises}{19}{subsection.3.4}%
+\contentsline {section}{\numberline {4}Circle}{31}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Equation}{31}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Tangent and Normal}{35}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}Pole and Polar}{47}{subsection.4.3}%
+\contentsline {subsection}{\numberline {4.4}Systems of Circles}{48}{subsection.4.4}%
+\contentsline {subsection}{\numberline {4.5}Miscellaneous}{49}{subsection.4.5}%
+\contentsline {section}{\numberline {5}Parabola}{51}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Tangent and Normal}{51}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}Miscellaneous}{52}{subsection.5.2}%
+\contentsline {section}{\numberline {6}The Ellipse}{55}{section.6}%
+\contentsline {subsection}{\numberline {6.1}Properties}{55}{subsection.6.1}%
+\contentsline {subsection}{\numberline {6.2}Pole and Polar}{55}{subsection.6.2}%
+\contentsline {subsection}{\numberline {6.3}Eccentric Angles}{56}{subsection.6.3}%
+\contentsline {subsection}{\numberline {6.4}Miscellaneous}{57}{subsection.6.4}%
+\contentsline {subsection}{\numberline {6.5}Hyperbola}{59}{subsection.6.5}%
+\contentsline {section}{\numberline {7}Polar Coordinates}{61}{section.7}%
+\contentsline {section}{\numberline {8}Easy Problems}{61}{section.8}%
+\contentsline {subsection}{\numberline {8.1}The Straight Line}{61}{subsection.8.1}%
+\contentsline {subsection}{\numberline {8.2}Curves and Loci}{62}{subsection.8.2}%
+\contentsline {subsection}{\numberline {8.3}The Circle}{63}{subsection.8.3}%
+\contentsline {subsection}{\numberline {8.4}The Parabola}{64}{subsection.8.4}%
+\contentsline {subsection}{\numberline {8.5}The Ellipse}{65}{subsection.8.5}%
+\contentsline {subsection}{\numberline {8.6}The Hyperbola}{67}{subsection.8.6}%
