@@ -16,23 +16,23 @@
 \contentsline {section}{\numberline {4}Circle}{33}{section.4}%
 \contentsline {subsection}{\numberline {4.1}Equation}{33}{subsection.4.1}%
 \contentsline {subsection}{\numberline {4.2}Tangent and Normal}{37}{subsection.4.2}%
-\contentsline {subsection}{\numberline {4.3}Pole and Polar}{50}{subsection.4.3}%
+\contentsline {subsection}{\numberline {4.3}Pole and Polar}{51}{subsection.4.3}%
 \contentsline {subsection}{\numberline {4.4}Systems of Circles}{51}{subsection.4.4}%
-\contentsline {subsection}{\numberline {4.5}Miscellaneous}{52}{subsection.4.5}%
-\contentsline {section}{\numberline {5}Parabola}{54}{section.5}%
-\contentsline {subsection}{\numberline {5.1}Tangent and Normal}{54}{subsection.5.1}%
+\contentsline {subsection}{\numberline {4.5}Miscellaneous}{53}{subsection.4.5}%
+\contentsline {section}{\numberline {5}Parabola}{55}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Tangent and Normal}{55}{subsection.5.1}%
 \contentsline {subsection}{\numberline {5.2}Miscellaneous}{56}{subsection.5.2}%
-\contentsline {section}{\numberline {6}The Ellipse}{58}{section.6}%
-\contentsline {subsection}{\numberline {6.1}Properties}{58}{subsection.6.1}%
-\contentsline {subsection}{\numberline {6.2}Pole and Polar}{59}{subsection.6.2}%
+\contentsline {section}{\numberline {6}The Ellipse}{59}{section.6}%
+\contentsline {subsection}{\numberline {6.1}Properties}{59}{subsection.6.1}%
+\contentsline {subsection}{\numberline {6.2}Pole and Polar}{60}{subsection.6.2}%
 \contentsline {subsection}{\numberline {6.3}Eccentric Angles}{60}{subsection.6.3}%
-\contentsline {subsection}{\numberline {6.4}Miscellaneous}{60}{subsection.6.4}%
+\contentsline {subsection}{\numberline {6.4}Miscellaneous}{61}{subsection.6.4}%
 \contentsline {subsection}{\numberline {6.5}Hyperbola}{63}{subsection.6.5}%
-\contentsline {section}{\numberline {7}Polar Coordinates}{64}{section.7}%
+\contentsline {section}{\numberline {7}Polar Coordinates}{65}{section.7}%
 \contentsline {section}{\numberline {8}Easy Problems}{65}{section.8}%
 \contentsline {subsection}{\numberline {8.1}The Straight Line}{65}{subsection.8.1}%
 \contentsline {subsection}{\numberline {8.2}Curves and Loci}{66}{subsection.8.2}%
 \contentsline {subsection}{\numberline {8.3}The Circle}{67}{subsection.8.3}%
 \contentsline {subsection}{\numberline {8.4}The Parabola}{68}{subsection.8.4}%
 \contentsline {subsection}{\numberline {8.5}The Ellipse}{69}{subsection.8.5}%
-\contentsline {subsection}{\numberline {8.6}The Hyperbola}{70}{subsection.8.6}%
+\contentsline {subsection}{\numberline {8.6}The Hyperbola}{71}{subsection.8.6}%
